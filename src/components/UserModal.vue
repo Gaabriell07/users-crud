@@ -148,6 +148,8 @@ const validateField = (field: keyof typeof errors) => {
         errors.name = 'El nombre es requerido'
       } else if (formData.name.length < 3) {
         errors.name = 'El nombre debe tener al menos 3 caracteres'
+      } else if (/\d/.test(formData.name)) {
+        errors.name = 'El nombre no puede contener números'
       }
       break
 
@@ -156,6 +158,8 @@ const validateField = (field: keyof typeof errors) => {
         errors.username = 'El nombre de usuario es requerido'
       } else if (formData.username.length < 3) {
         errors.username = 'El nombre de usuario debe tener al menos 3 caracteres'
+      } else if (/\d/.test(formData.username)) {
+        errors.username = 'El nombre de usuario no puede contener números'
       }
       break
 
@@ -170,6 +174,8 @@ const validateField = (field: keyof typeof errors) => {
     case 'phone':
       if (!formData.phone) {
         errors.phone = 'El teléfono es requerido'
+      } else if (/[a-zA-Z]/.test(formData.phone)) {
+        errors.phone = 'El teléfono no puede contener letras'
       }
       break
   }
