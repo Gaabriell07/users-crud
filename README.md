@@ -39,16 +39,6 @@ La aplicación corre en: `http://localhost:3000`
 - Campos requeridos: nombre, username, email, teléfono
 - Longitud mínima: 3 caracteres para nombre y username
 
-### Características Técnicas
-
-- **Vue 3** con Composition API y `<script setup>`
-- **TypeScript** para tipado fuerte
-- **Bootstrap 5** para UI responsive
-- **Estado local** con `ref()` y `reactive()`
-- **Props/Emits** para comunicación entre componentes
-- **Loading states** durante llamadas a API
-- **Notificaciones toast** auto-ocultables (3 segundos)
-
 ---
 
 ## Tecnologías
@@ -64,26 +54,8 @@ La aplicación corre en: `http://localhost:3000`
 
 **Endpoint**: `https://jsonplaceholder.typicode.com/users`
 
-## Criterios de Evaluación Cumplidos
-
 ### Estructura y Vue.js
 
 - Proyecto modular con 5 componentes separados
 - Composition API
 - TypeScript en todos los archivos
-
-### Manejo del Estado
-
-- Estado centralizado en App.vue
-- Props para pasar datos a componentes hijos
-- Emits para comunicación hijo-padre
-- Sin Vuex/Pinia (estado local con props/emits)
-
----
-
-## Notas Importantes
-
-1. **Solo lectura inicial**: Los datos se obtienen de la API al cargar
-2. **Operaciones locales**: Crear, editar y eliminar afectan solo al estado local
-3. **IDs secuenciales**: Se generan automáticamente al crear usuarios
-4. **Sin persistencia**: Los cambios se pierden al recargar la página
