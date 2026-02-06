@@ -8,7 +8,7 @@ Sistema de gestión de usuarios con operaciones CRUD completas usando Vue 3, Typ
 
 ```bash
 # Clonar el repositorio
-git clone [URL_DEL_REPO]
+git clone [https://github.com/Gaabriell07/users-crud.git]
 
 # Instalar dependencias
 npm install
